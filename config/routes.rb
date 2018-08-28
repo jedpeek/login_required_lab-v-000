@@ -9,9 +9,9 @@ Rails.application.routes.draw do
    post '/login' => 'sessions#create'
    post '/logout' => 'sessions#destroy'
    get '/secret' => 'secrets#show'
-   
+
    post '/login' => 'sessions#create'
-   get '/secrets' => 'secrets#show'
+   get '/secret' => 'secrets#show'
    get '/welcome' => 'sessions#welcome'
    get '/' => 'sessions#new'
   #   get 'products/:id' => 'catalog#view'
