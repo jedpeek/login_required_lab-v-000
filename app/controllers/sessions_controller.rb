@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    if params[:name] 
+    if params[:name]
       current_user = params[:name]
       redirect_to action:'welcome'
     else
