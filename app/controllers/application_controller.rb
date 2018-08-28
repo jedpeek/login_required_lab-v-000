@@ -8,6 +8,6 @@ class ApplicationController < ActionController::Base
   private
 
   def require_login
-    redirect_to controller: 'session', action: 'new' unless current_user
+    redirect_to controller: 'session', action: 'new' unless current_user.empty?
   end
 end
