@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
   end
 
   def create
+    raise params.inspect
     if params[:name]
       current_user = params[:name]
       redirect_to 'sessions#welcome'
